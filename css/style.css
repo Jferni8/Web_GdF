@@ -1,6 +1,18 @@
 header{
-  background-color: #121212;
+  background-color: black;
 }
 body{
   background-color:#3d3c3c;
+}
+h1{
+  color: white;
+}
+h2{
+  color: white;
+}
+p{
+  color: #cfcfcf;
+}
+li{
+  color: #cfcfcf;
 }
