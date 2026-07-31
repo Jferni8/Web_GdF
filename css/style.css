@@ -1,8 +1,14 @@
 header{
   background-color: black;
 }
+.header-container{
+  max-width: 1200px;
+}
+.titulo_header{
+  text-transform: uppercase;
+}
 body{
-  background-color:#3d3c3c;
+  background-color: #3d3c3c;
 }
 h1{
   color: white;
