@@ -1,8 +1,14 @@
 header{
   background-color: black;
 }
+img{
+  max-width: 200px;
+}
 .header-container{
   max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .titulo_header{
   text-transform: uppercase;
