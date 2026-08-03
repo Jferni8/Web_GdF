@@ -4,10 +4,13 @@ header{
 img{
   max-width: 200px;
 }
+img.LogoRRSS{
+  max-height: 30px;
+}
 .header-container{
   max-width: 1200px;
-  display: flex;
-  justify-content: space-between;
+  display: flex; /*Poner la lista de elementos en horizontal*/
+  justify-content: space-between; /*Poner un espacio entre cada elemento*/
   align-items: center;
 }
 .titulo_header{
