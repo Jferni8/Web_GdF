@@ -1,13 +1,13 @@
 header{
   background-color: black;
 }
-img{
+img.logo_GDF{
   max-width: 200px;
 }
-img.LogoRRSS{
+img.logo_RRSS{
   max-height: 30px;
 }
-.header-container{
+.header_container{
   max-width: 1200px;
   display: flex; /*Poner la lista de elementos en horizontal*/
   justify-content: space-between; /*Poner un espacio entre cada elemento*/
@@ -30,4 +30,7 @@ p{
 }
 li{
   color: #cfcfcf;
+}
+.hero{
+  display: flex;
 }
