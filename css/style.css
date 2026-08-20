@@ -1,39 +1,930 @@
-header{
-  background-color: black;
-  padding: 20px;
-  margin-top: 40px;
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+
+    --negro: #0b0b0d;
+    --blanco: #ffffff;
+
+    --azul: #00bfff;
+    --azul-oscuro: #0077b6;
+
+    --naranja: #ff9a1f;
+
+    --gris: #f4f6f8;
+    --gris-texto: #5f6368;
+
 }
-img.logo_GDF{
-  max-width: 200px;
+
+
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-img.logo_RRSS{
-  max-height: 30px;
+
+
+html {
+    scroll-behavior: smooth;
 }
-.header_container{
-  max-width: 1200px;
-  width: 90%;
-  display: flex; /*Poner la lista de elementos en horizontal*/
-  justify-content: space-between; /*Poner un espacio entre cada elemento*/
-  align-items: center;
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: var(--blanco);
+    color: var(--negro);
 }
-.titulo_header{
-  text-transform: uppercase;
+
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
-body{
-  background-color: #3d3c3c;
+
+
+ul {
+    list-style: none;
 }
-h1{
-  color: white;
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+
+    height: 80px;
+
+    background-color: rgb(0, 0, 0);
+
+    border-bottom: 2px solid #ff8400;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
 }
-h2{
-  color: white;
+
+
+.header_container {
+
+    width: 86%;
+    height: 100%;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
 }
-p{
-  color: #cfcfcf;
+
+
+/* LOGO */
+
+.logo_GDF {
+
+    width: 65px;
+
+    display: block;
+
 }
-li{
-  color: #cfcfcf;
+
+
+/* =========================
+   MENÚ
+========================= */
+
+.secciones {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
 }
-.hero{
-  display: flex;
+
+
+.secciones a {
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+
+    color: white;
+
+}
+
+
+.secciones a:hover {
+
+    color: var(--azul);
+
+}
+
+
+/* =========================
+   REDES SOCIALES
+========================= */
+
+.redes_sociales {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.logo_RRSS {
+
+    width: 25px;
+
+    height: 25px;
+
+    object-fit: contain;
+
+    transition: 0.2s;
+
+}
+
+
+.logo_RRSS:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: calc(100vh - 80px);
+
+    padding: 80px 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(0, 191, 255, 0.08),
+            transparent 35%
+        );
+
+}
+
+
+.hero_text {
+
+    max-width: 620px;
+
+}
+
+
+.hero_tag {
+
+    color: var(--azul);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(55px, 7vw, 100px);
+
+    line-height: 0.95;
+
+    letter-spacing: -5px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.hero h1 span {
+
+    color: var(--azul);
+
+}
+
+
+.hero_description {
+
+    max-width: 550px;
+
+    color: var(--gris-texto);
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =========================
+   BOTONES HERO
+========================= */
+
+.hero_buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+
+.button {
+
+    padding: 14px 25px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.25s;
+
+}
+
+
+.button_primary {
+
+    background-color: var(--negro);
+
+    color: white;
+
+}
+
+
+.button_primary:hover {
+
+    background-color: var(--azul);
+
+    transform: translateY(-2px);
+
+}
+
+
+.button_secondary {
+
+    border: 2px solid var(--negro);
+
+}
+
+
+.button_secondary:hover {
+
+    background-color: var(--negro);
+
+    color: white;
+
+}
+
+
+/* =========================
+   LOGO GRANDE DEL HERO
+========================= */
+
+.hero_visual {
+
+    width: 420px;
+
+    height: 420px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.hero_circle {
+
+    width: 330px;
+
+    height: 330px;
+
+    border: 2px solid var(--azul);
+
+    border-radius: 50%;
+
+    position: absolute;
+
+}
+
+
+.hero_circle::after {
+
+    content: "";
+
+    width: 120px;
+
+    height: 120px;
+
+    border-radius: 50%;
+
+    border: 2px solid var(--naranja);
+
+    position: absolute;
+
+    right: -25px;
+
+    bottom: 10px;
+
+}
+
+
+.hero_logo {
+
+    position: relative;
+
+    z-index: 2;
+
+    font-size: 90px;
+
+    font-weight: 900;
+
+    letter-spacing: -10px;
+
+}
+
+
+.logo_g {
+
+    color: var(--negro);
+
+}
+
+
+.logo_d {
+
+    color: var(--azul);
+
+    font-size: 68px;
+
+}
+
+
+.logo_f {
+
+    color: var(--naranja);
+
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+section {
+
+    padding: 110px 8%;
+
+}
+
+
+.section_header {
+
+    max-width: 650px;
+
+    margin-bottom: 60px;
+
+}
+
+
+.section_tag {
+
+    color: var(--azul);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.section_header h2 {
+
+    font-size: 48px;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.section_header > p:last-child {
+
+    color: var(--gris-texto);
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================
+   PROYECTOS
+========================= */
+
+.projects {
+
+    background-color: var(--gris);
+
+}
+
+
+.project_grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.project_card {
+
+    min-height: 300px;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+}
+
+
+.project_card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+.project_number {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 30px;
+
+    color: #c8cdd1;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+.project_line {
+
+    width: 45px;
+
+    height: 4px;
+
+    background-color: var(--azul);
+
+    margin-bottom: 20px;
+
+}
+
+
+.project_line.orange {
+
+    background-color: var(--naranja);
+
+}
+
+
+.project_card h3 {
+
+    font-size: 27px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.project_card p {
+
+    color: var(--gris-texto);
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================
+   SECCIONES SIMPLES
+========================= */
+
+.simple_section {
+
+    min-height: 450px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.grey_section {
+
+    background-color: var(--gris);
+
+}
+
+
+/* =========================
+   SOBRE MÍ
+========================= */
+
+.about {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    align-items: center;
+
+}
+
+
+.about_title h2 {
+
+    font-size: 48px;
+
+    letter-spacing: -2px;
+
+}
+
+
+.about_text p {
+
+    color: var(--gris-texto);
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================
+   TECNOLOGÍAS
+========================= */
+
+.technology_grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.technology {
+
+    padding: 25px;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 6px;
+
+    font-weight: 700;
+
+    transition: 0.2s;
+
+}
+
+
+.technology:hover {
+
+    border-color: var(--azul);
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contact {
+
+    background-color: var(--negro);
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+.contact_content {
+
+    max-width: 700px;
+
+    margin: auto;
+
+}
+
+
+.contact h2 {
+
+    font-size: 55px;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.contact p:not(.section_tag) {
+
+    color: #a9adb2;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 35px;
+
+}
+
+
+.contact_button {
+
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background-color: var(--naranja);
+
+    color: white;
+
+    border-radius: 6px;
+
+    font-weight: 700;
+
+    transition: 0.25s;
+
+}
+
+
+.contact_button:hover {
+
+    background-color: var(--azul);
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    padding: 25px 8%;
+
+    background-color: var(--negro);
+
+    border-top: 1px solid #222;
+
+    color: #777;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+    .secciones {
+
+        gap: 15px;
+
+    }
+
+    .secciones a {
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .links_externos {
+
+        display: none;
+
+    }
+
+
+    .secciones {
+
+        display: none;
+
+    }
+
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 60px;
+
+    }
+
+
+    .hero_description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .hero_buttons {
+
+        justify-content: center;
+
+    }
+
+
+    .project_grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .about {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+
+    .technology_grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    section {
+
+        padding: 80px 6%;
+
+    }
+
+
+    .hero {
+
+        padding: 60px 6%;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 55px;
+
+    }
+
+
+    .hero_visual {
+
+        transform: scale(0.7);
+
+    }
+
+
+    .section_header h2 {
+
+        font-size: 38px;
+
+    }
+
+
+    .hero_buttons {
+
+        flex-direction: column;
+
+    }
+
+
+    .technology_grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
 }
