@@ -287,6 +287,8 @@ header {
 
     background-color: var(--negro);
 
+    border: 3px solid var(--negro);
+
     color: white;
 
 }
@@ -296,23 +298,31 @@ header {
 
     background-color: var(--azul);
 
-    transform: translateY(-2px);
+    border: 3px solid var(--naranja);
+
+    transform: translateY(-5px);
 
 }
 
 
 .button_secondary {
 
-    border: 2px solid var(--negro);
+    background-color: var(--negro);
+
+    border: 3px solid var(--negro);
+
+    color: white;
 
 }
 
 
 .button_secondary:hover {
 
-    background-color: var(--negro);
+    background-color: var(--azul);
 
-    color: white;
+    border: 3px solid var(--naranja);
+
+    transform: translateY(-5px);
 
 }
 
@@ -499,7 +509,9 @@ section {
 
     padding: 35px;
 
-    border-radius: 10px;
+    border-radius: 20px;
+
+    border: 3px solid var(--white);
 
     display: flex;
 
@@ -518,7 +530,9 @@ section {
 
 .project_card:hover {
 
-    transform: translateY(-8px);
+    transform: translateY(-10px);
+
+    border: 3px solid var(--azul);
 
 }
 
