@@ -3,68 +3,489 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Garaje de Ferni</title>
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body>
+
+  <!-- =========================
+       CABECERA
+  ========================== -->
+
   <header>
-    <!-- Parte superior fija de la pagina -->
+
     <div class="header_container">
+
+      <!-- LOGO -->
+
       <a href="index.html">
-        <img src="img/logo.png" alt="Logo Garaje de Ferni" class="logo_GDF">  <!--Logo-->
+        <img
+          src="img/logo.png"
+          alt="Logo Garaje de Ferni"
+          class="logo_GDF"
+        >
       </a>
+
+
+      <!-- MENÚ PRINCIPAL -->
+
       <nav>
+
         <ul class="secciones">
-          <li><a href="#">Inicio</a></li> <!--Un enlace contexto "Inicio" para que  mande al usuario al apartado definido en "#"-->
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Vídeos</a></li>
-          <li><a href="#">Sobre Mí</a></li>
-          <li><a href="#">Tecnologías</a></li>
-          <li><a href="#">Contacto</a></li>
+
+          <li>
+            <a href="#inicio">Inicio</a>
+          </li>
+
+          <li>
+            <a href="#proyectos">Proyectos</a>
+          </li>
+
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
+
+          <li>
+            <a href="#videos">Vídeos</a>
+          </li>
+
+          <li>
+            <a href="#sobre-mi">Sobre Mí</a>
+          </li>
+
+          <li>
+            <a href="#tecnologias">Tecnologías</a>
+          </li>
+
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
+
         </ul>
+
       </nav>
+
+
+      <!-- REDES SOCIALES -->
+
       <nav class="links_externos">
+
         <ul class="redes_sociales">
-          <li><a href="https://www.youtube.com/">
-            <img src="img/logo_yt.png" alt="Logo YouTube" class="logo_RRSS">
-          </a></li>
-          <li><a href="https://www.instagram.com/garajedeferni">
-            <img src="img/logo_ig.png" alt="Logo Instagram" class="logo_RRSS">
-          </a></li>
-          <li><a href="https://www.tiktok.com/@garajedeferni">
-            <img src="img/logo_tt.png" alt="Logo TikTok" class="logo_RRSS">
-          </a></li>
-          <li><a href="https://github.com/Jferni8">
-            <img src="img/logo_gh.png" alt="Logo GitHub" class="logo_RRSS">
-          </a></li>
-          <li><a href="https://www.linkedin.com/in/jon-fernandez-fernandez-461944232/
-            ">
-            <img src="img/logo_li.png" alt="Logo LinkedIn" class="logo_RRSS">
-          </a></li>
+
+          <li>
+            <a href="https://www.youtube.com/">
+              <img
+                src="img/logo_yt.png"
+                alt="Logo YouTube"
+                class="logo_RRSS"
+              >
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/garajedeferni">
+              <img
+                src="img/logo_ig.png"
+                alt="Logo Instagram"
+                class="logo_RRSS"
+              >
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.tiktok.com/@garajedeferni">
+              <img
+                src="img/logo_tt.png"
+                alt="Logo TikTok"
+                class="logo_RRSS"
+              >
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/Jferni8">
+              <img
+                src="img/logo_gh.png"
+                alt="Logo GitHub"
+                class="logo_RRSS"
+              >
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/jon-fernandez-fernandez-461944232/">
+              <img
+                src="img/logo_li.png"
+                alt="Logo LinkedIn"
+                class="logo_RRSS"
+              >
+            </a>
+          </li>
+
         </ul>
+
       </nav>
+
     </div>
+
   </header>
+
+
+  <!-- =========================
+       CONTENIDO PRINCIPAL
+  ========================== -->
+
   <main>
-    <section class="hero">
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="inicio">
+
       <div class="hero_text">
-        <h1>Garaje de Ferni</h1>
-        <p>
-          Ingeniería automatización, proyectos maker
+
+        <p class="hero_tag">
+          GARAGE · ENGINEERING · MAKER
         </p>
-        <p>
-          Convirtiendo ideas en proyectos reales
+
+        <h1>
+          Garaje<br>
+          de <span>Ferni</span>
+        </h1>
+
+        <p class="hero_description">
+          Ingeniería, automatización y proyectos maker.
+          Convirtiendo ideas en proyectos reales.
         </p>
-        <button>Ver proyectos</button>
+
+        <div class="hero_buttons">
+
+          <a href="#proyectos" class="button button_primary">
+            Ver proyectos
+          </a>
+
+          <a href="#sobre-mi" class="button button_secondary">
+            Sobre mí
+          </a>
+
+        </div>
+
       </div>
+
+
+      <!-- ELEMENTO VISUAL DEL HERO -->
+
+      <div class="hero_visual">
+
+        <div class="hero_circle"></div>
+
+        <div class="hero_logo">
+
+          <span class="logo_g">G</span>
+          <span class="logo_d">d</span>
+          <span class="logo_f">F</span>
+
+        </div>
+
+      </div>
+
     </section>
+
+
+    <!-- =========================
+         PROYECTOS
+    ========================== -->
+
+    <section class="projects" id="proyectos">
+
+      <div class="section_header">
+
+        <p class="section_tag">
+          PROYECTOS
+        </p>
+
+        <h2>
+          Cosas que he construido.
+        </h2>
+
+        <p>
+          Proyectos de ingeniería, robótica, electrónica,
+          programación y fabricación digital.
+        </p>
+
+      </div>
+
+
+      <div class="project_grid">
+
+
+        <article class="project_card">
+
+          <span class="project_number">
+            01
+          </span>
+
+          <div class="project_line"></div>
+
+          <h3>
+            Robótica
+          </h3>
+
+          <p>
+            Robots, actuadores, sensores y sistemas
+            de control desarrollados desde cero.
+          </p>
+
+        </article>
+
+
+        <article class="project_card">
+
+          <span class="project_number">
+            02
+          </span>
+
+          <div class="project_line orange"></div>
+
+          <h3>
+            Visión artificial
+          </h3>
+
+          <p>
+            Cámaras, procesamiento de imágenes,
+            inteligencia artificial y detección.
+          </p>
+
+        </article>
+
+
+        <article class="project_card">
+
+          <span class="project_number">
+            03
+          </span>
+
+          <div class="project_line"></div>
+
+          <h3>
+            Electrónica
+          </h3>
+
+          <p>
+            Arduino, ESP32, sensores y sistemas
+            electrónicos.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         BLOG
+    ========================== -->
+
+    <section class="simple_section" id="blog">
+
+      <div class="section_header">
+
+        <p class="section_tag">
+          BLOG
+        </p>
+
+        <h2>
+          Aprender construyendo.
+        </h2>
+
+        <p>
+          Tutoriales, experimentos y todo lo que voy
+          aprendiendo durante mis proyectos.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         VÍDEOS
+    ========================== -->
+
+    <section class="simple_section grey_section" id="videos">
+
+      <div class="section_header">
+
+        <p class="section_tag">
+          VÍDEOS
+        </p>
+
+        <h2>
+          Del garaje a la pantalla.
+        </h2>
+
+        <p>
+          Proyectos, pruebas y experimentos compartidos
+          en vídeo.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SOBRE MÍ
+    ========================== -->
+
+    <section class="about" id="sobre-mi">
+
+      <div class="about_title">
+
+        <p class="section_tag">
+          SOBRE MÍ
+        </p>
+
+        <h2>
+          Ingeniería + curiosidad.
+        </h2>
+
+      </div>
+
+
+      <div class="about_text">
+
+        <p>
+          Soy Ferni, ingeniero apasionado por la tecnología
+          y por entender cómo funcionan las cosas.
+        </p>
+
+        <p>
+          En Garaje de Ferni comparto proyectos en los que
+          mezclo programación, electrónica, robótica,
+          fabricación digital y automatización.
+        </p>
+
+        <p>
+          La idea es sencilla:
+          <strong>aprender construyendo.</strong>
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         TECNOLOGÍAS
+    ========================== -->
+
+    <section class="technologies" id="tecnologias">
+
+      <div class="section_header">
+
+        <p class="section_tag">
+          TECNOLOGÍAS
+        </p>
+
+        <h2>
+          Las herramientas del garaje.
+        </h2>
+
+      </div>
+
+
+      <div class="technology_grid">
+
+        <div class="technology">
+          Python
+        </div>
+
+        <div class="technology">
+          C / C++
+        </div>
+
+        <div class="technology">
+          ESP32
+        </div>
+
+        <div class="technology">
+          Arduino
+        </div>
+
+        <div class="technology">
+          OpenCV
+        </div>
+
+        <div class="technology">
+          3D Printing
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+
+    <section class="contact" id="contacto">
+
+      <div class="contact_content">
+
+        <p class="section_tag">
+          CONTACTO
+        </p>
+
+        <h2>
+          ¿Construimos algo?
+        </h2>
+
+        <p>
+          Si tienes una idea, un proyecto o simplemente
+          quieres hablar de tecnología, escríbeme.
+        </p>
+
+        <a
+          href="mailto:contacto@garajedeferni.com"
+          class="contact_button"
+        >
+          Contactar
+        </a>
+
+      </div>
+
+    </section>
+
+
   </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
   <footer>
-    <!-- Parte inferior fija de la pagina -->
+
+    <p>
+      © 2026 Garaje de Ferni
+    </p>
+
+    <p>
+      Ingeniería · Tecnología · Maker
+    </p>
 
   </footer>
+
+
 </body>
 
 </html>
