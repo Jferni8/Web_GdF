@@ -11,6 +11,7 @@ img.logo_RRSS{
 }
 .header_container{
   max-width: 1200px;
+  width: 90%;
   display: flex; /*Poner la lista de elementos en horizontal*/
   justify-content: space-between; /*Poner un espacio entre cada elemento*/
   align-items: center;
