@@ -15,6 +15,12 @@
     --gris: #f4f6f8;
     --gris-texto: #5f6368;
 
+
+    --color-robotica: #00bfff;
+    --color-vision: #ff9a1f;
+    --color-electronica: #ed3ad5;
+    --color-programacion: #22c55e;
+
 }
 
 
@@ -483,6 +489,22 @@ section {
    PROYECTOS
 ========================= */
 
+.project_card.robotica {
+    --color-categoria: var(--color-robotica);
+}
+
+.project_card.vision {
+    --color-categoria: var(--color-vision);
+}
+
+.project_card.electronica {
+    --color-categoria: var(--color-electronica);
+}
+
+.project_card.programacion {
+    --color-categoria: var(--color-programacion);
+}
+
 .projects {
 
     background-color: var(--gris);
@@ -524,6 +546,7 @@ section {
     overflow: hidden;
 
     transition: 0.3s;
+    
 
 }
 
@@ -532,8 +555,39 @@ section {
 
     transform: translateY(-10px);
 
-    border: 3px solid var(--azul);
+    background-color: grey;
+    
 
+}
+
+
+.project_card:hover h3 {
+    color: var(--blanco);
+
+    font-size: 27px;
+
+    margin-bottom: 10px;
+}
+
+.project_card:hover p {
+    color: var(--gris);
+    line-height: 1.5;
+}
+
+.project_card.robotica:hover {
+    border: 3px solid var(--color-robotica);
+}
+
+.project_card.vision:hover {
+    border: 3px solid var(--color-vision);
+}
+
+.project_card.electronica:hover {
+    border: 3px solid var(--color-electronica);
+}
+
+.project_card.programacion:hover {
+    border: 3px solid var(--color-programacion);
 }
 
 
@@ -553,27 +607,28 @@ section {
 
 }
 
-
 .project_line {
-
-    width: 45px;
-
-    height: 4px;
-
-    background-color: var(--azul);
-
-    margin-bottom: 20px;
-
+    background-color: var(--color-categoria);
 }
 
-
-.project_line.orange {
-
-    background-color: var(--naranja);
-
+/*
+.project_card.robotica .project_line {
+    background-color: var(--color-robotica);
 }
 
+.project_card.vision .project_line {
+    background-color: var(--color-vision);
+}
 
+.project_card.electronica .project_line {
+    background-color: var(--color-electronica);
+}
+
+.project_card.programacion .project_line {
+    background-color: var(--color-programacion);
+}
+
+*/
 .project_card h3 {
 
     font-size: 27px;
@@ -590,6 +645,7 @@ section {
     line-height: 1.5;
 
 }
+
 
 
 /* =========================
